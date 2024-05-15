@@ -1,0 +1,1044 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+:root {
+  --color1: #0c121f;
+  --color2: #19c8fa;
+  --paragraph: #777;
+  --white: #fff;
+  --transparent-color: #0f748fb3;
+  --gradient: rgba(0, 0, 0, 0.7);
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+    url(../media/landing.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  height: 105vh;
+  color: var(--white);
+  position: relative;
+}
+
+header nav,
+header .list-icons,
+header .angles,
+.bullets,
+main .portfolio ul,
+main .form .content,
+footer .icons,
+main .form form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Navbar */
+header nav {
+  width: 90%;
+  margin: 0 auto;
+  padding: 30px 0 0 0;
+  border-bottom: 1px solid;
+}
+
+header img {
+  margin-bottom: 20px;
+}
+
+/* Ul List icons */
+header .list-icons ul {
+  list-style: none;
+  display: none;
+}
+
+/* Li list Icons */
+header .list-icons ul li {
+  padding: 0 20px 30px;
+}
+
+header .list-icons ul li.active a,
+header .list-icons ul li:hover a {
+  color: var(--color2);
+}
+
+header .list-icons ul li.active,
+header .list-icons ul li:hover {
+  border-bottom: 1px solid var(--color2);
+}
+
+/* Anchor */
+header .list-icons ul li a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+/* Icons */
+header .icons {
+  padding-bottom: 30px;
+}
+
+header .list-icons i {
+  font-size: 20px;
+}
+
+header .list-icons span {
+  font-size: 20px;
+  margin: 0 10px 0 15px;
+}
+
+/* Content */
+header .content-sec {
+  width: 100%;
+  height: 85vh;
+  display: grid;
+  place-items: center;
+}
+
+header section .content {
+  background-color: var(--transparent-color);
+  padding: 50px;
+}
+
+header section .content h1 {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+header section .content p {
+  margin-top: 20px;
+  line-height: 28px;
+}
+
+/* ANGLES */
+header .angles {
+  width: 98%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+header .angles i {
+  cursor: pointer;
+}
+
+/* Bullets Section */
+.bullets {
+  position: relative;
+  top: -20px;
+  width: 90px;
+  margin: 0 auto;
+}
+
+.bullets span {
+  border: 1px solid var(--white);
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.bullets span:hover {
+  border: 1px solid var(--color2);
+}
+
+main .testmonials-skills .testmonials .bullets span {
+  border: 1px solid;
+}
+
+.bullets span:nth-of-type(2),
+main .testmonials-skills .testmonials .bullets span:nth-of-type(2) {
+  background-color: var(--color2);
+  border-color: var(--color2);
+}
+
+/* Main */
+main section {
+  text-align: center;
+  padding: 100px 0 0;
+}
+
+main section .heading {
+  font-size: 40px;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--color1);
+  margin-bottom: 50px;
+}
+
+main section .main-heading::before,
+main section .main-heading::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+main section .main-heading::before {
+  width: 200px;
+  height: 2px;
+  background-color: var(--color1);
+  bottom: -30px;
+}
+
+main section .main-heading::after {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: var(--white);
+  border: 2px solid var(--color1);
+  bottom: -40px;
+}
+
+main section p {
+  line-height: 30px;
+  padding: 0 20px;
+  color: var(--paragraph);
+}
+
+main section .container-content {
+  padding-top: 50px;
+}
+
+main .services .container-content .content {
+  margin: 50px 0;
+}
+
+main .services .container-content .content h3 {
+  font-size: 18px;
+  margin: 20px 0;
+  color: var(--color2);
+}
+
+/* Design Section */
+main .design {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../media/design-features.jpg);
+  color: var(--white);
+  text-align: left;
+  height: 70vh;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  overflow: hidden;
+}
+
+main .design figure {
+  display: none;
+}
+
+main .design .content {
+  background-color: var(--transparent-color);
+  padding: 50px;
+}
+
+main .design .content .heading {
+  color: var(--white);
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+main .design .content ul {
+  padding-left: 20px;
+}
+
+main .design .content ul li {
+  list-style-image: url(../media/desktop-solid.svg);
+  padding-left: 20px;
+}
+
+main .design .content ul li::marker {
+  font-size: 35px;
+}
+
+/* Portfolio Section */
+main .portfolio ul {
+  list-style: none;
+  width: 310px;
+  margin: 40px auto;
+}
+
+main .portfolio ul li {
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+main .portfolio ul .active {
+  background-color: var(--color2);
+  color: var(--white);
+}
+
+main .portfolio .images figure {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio .images figure .caption {
+  position: absolute;
+  left: 0;
+  padding: 20px;
+  background-color: white;
+  width: 100%;
+  transition: 0.3s;
+  bottom: -100%;
+  text-align: left;
+}
+
+.portfolio .images figure .caption h4 {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.portfolio .images figure .caption p {
+  color: var(--color2);
+  padding: 0;
+}
+
+main .portfolio .images figure:hover img {
+  transform: rotate(3deg) scale(1.1);
+}
+
+.portfolio .images figure:hover .caption {
+  bottom: 0;
+}
+
+main .portfolio .images figure img {
+  transition: all 0.2s linear 0s;
+  width: 100%;
+}
+
+main .portfolio button,
+main .price .contact-btn,
+main .form form button,
+main .contact-us form button,
+main .video .content button {
+  color: var(--white);
+  border: none;
+  border-radius: 5px;
+  background-color: var(--color2);
+  padding: 10px 20px;
+  margin-top: 50px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+main .contact-us form button:hover,
+main .portfolio button:hover,
+main .price .contact-btn:hover,
+main .portfolio ul li:hover {
+  opacity: 0.8;
+}
+
+/* Video Section */
+main .video {
+  margin-top: 50px;
+  position: relative;
+  padding-top: 0;
+}
+
+main .video::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--gradient);
+}
+
+main .video video {
+  width: 100%;
+  display: block;
+}
+
+main .video .content {
+  background-color: var(--transparent-color);
+  color: var(--white);
+  padding: 40px 20px 20px;
+  height: 250px;
+  width: 100%;
+  position: absolute;
+  top: 60%;
+  transform: translateY(-50%);
+}
+
+main .video .content .heading {
+  color: var(--white);
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+main .video .content p {
+  margin-bottom: 20px;
+  color: var(--white);
+}
+
+main .video .content button {
+  background-color: var(--color1);
+  color: var(--white);
+  margin: 0;
+}
+
+.video .content button:hover {
+  background-color: var(--white);
+  color: var(--color1);
+}
+
+/* About Section */
+main .about figure {
+  max-width: 700px;
+  margin-top: 50px;
+  position: relative;
+  top: 80px;
+  z-index: -1;
+}
+
+main .about figure img {
+  width: 100%;
+}
+
+main .about .container-content {
+  background-image: linear-gradient(var(--gradient), var(--gradient)),
+    url(../media/stats.png);
+  display: grid;
+  place-items: center;
+  padding-bottom: 50px;
+  width: 100%;
+}
+
+main .about .container-content .contents {
+  background-color: var(--transparent-color);
+  width: 90%;
+  color: var(--white);
+  padding: 20px 0;
+}
+
+main .about .contents .content {
+  margin: 50px 0;
+}
+
+main .about .container-content .contents .content i {
+  background-color: var(--color1);
+  border-radius: 50%;
+  padding: 15px;
+  margin-bottom: 20px;
+  font-size: 17px;
+}
+
+main .about .container-content .contents .content h3 {
+  font-size: 50px;
+}
+
+main .about .container-content .contents .content p {
+  color: var(--white);
+}
+
+/* Testmonials Skills Section */
+main .testmonials-skills h3 {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+main .testmonials-skills figure img {
+  border-radius: 50%;
+  width: 100px;
+}
+
+/* Testmonials */
+main .testmonials-skills {
+  margin-bottom: 150px;
+}
+
+main .testmonials-skills .testmonials .person {
+  margin: 50px 0;
+}
+
+main .testmonials-skills .testmonials .person p {
+  border-bottom: 1px solid var(--paragraph);
+  position: relative;
+  padding: 0 0 40px 0;
+  margin: 0 20px;
+}
+
+main .testmonials-skills .testmonials .person p span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/* Skills */
+main .testmonials-skills .skills .prog-holder {
+  margin: 50px 0 0;
+}
+
+main .testmonials-skills .skills .prog-holder p {
+  text-align: left;
+  margin: 10px 0;
+  color: #000;
+}
+
+main .testmonials-skills .skills .prog-holder .progress {
+  background-color: #ddd;
+  width: 90%;
+  height: 30px;
+  margin: 20px auto;
+}
+
+main .testmonials-skills .skills .prog-holder .progress .prog {
+  height: 100%;
+  position: relative;
+  background-color: var(--color2);
+}
+
+main .testmonials-skills .skills .prog-holder .progress .html,
+main .testmonials-skills .skills .prog-holder .progress .php {
+  width: 90%;
+}
+
+main .testmonials-skills .skills .prog-holder .progress .css {
+  width: 85%;
+}
+
+main .testmonials-skills .skills .prog-holder .progress .js {
+  width: 80%;
+}
+
+main .testmonials-skills .skills .prog-holder .progress .prog::after,
+main .testmonials-skills .skills .prog-holder .progress .prog::before {
+  content: "90%";
+  position: absolute;
+  background-color: var(--color1);
+  color: var(--white);
+  height: 20px;
+  width: 30px;
+  padding: 5px;
+  font-size: 14px;
+  right: -20px;
+  top: -40px;
+}
+
+main .testmonials-skills .skills .prog-holder .progress .prog::before {
+  content: "";
+  height: 5px;
+  width: 5px;
+  right: -8px;
+  top: -20px;
+  transform: rotate(45deg);
+}
+
+main .testmonials-skills .skills .prog-holder .progress .css::after {
+  content: "85%";
+}
+
+main .testmonials-skills .skills .prog-holder .progress .js::after {
+  content: "80%";
+}
+
+/* Quote Section */
+main .quote {
+  background-image: linear-gradient(var(--gradient), var(--gradient)),
+    url(../media/quote.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50vh;
+  display: grid;
+  place-items: center;
+  color: var(--white);
+}
+
+main .quote q {
+  font-size: 30px;
+}
+
+main .quote p {
+  color: var(--white);
+  padding-top: 20px;
+}
+
+/* Section Cards */
+main .form .content,
+footer .icons {
+  flex-wrap: wrap;
+}
+
+main .cards h3 {
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 50px;
+  font-size: 20px;
+}
+
+main .cards .card {
+  background-color: #fcfcfc;
+  width: 90%;
+  margin: 40px auto;
+  padding-bottom: 20px;
+}
+
+main .cards .card p {
+  color: var(--color1);
+}
+
+main .cards .card .type {
+  border-top: 1px solid var(--color2);
+  border-bottom: 1px solid var(--color2);
+  padding: 20px 0 50px 0;
+}
+
+main .cards .card .type p {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+main .cards .card .type p sup {
+  position: relative;
+  top: -20px;
+  left: -10px;
+}
+
+main .cards .card .type span {
+  font-size: 60px;
+}
+
+main .card .features {
+  border-bottom: 1px solid var(--color2);
+  margin-bottom: 20px;
+}
+
+main .card .features p {
+  width: fit-content;
+  border-bottom: 1px solid var(--color2);
+  margin: 10px auto;
+  padding: 0 0 10px 0;
+  font-size: 18px;
+}
+
+main .card .features p:nth-last-of-type(1) {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+main .cards .card .buy-btn {
+  border: 1px solid var(--color2);
+  padding: 20px;
+  background-color: inherit;
+  cursor: pointer;
+}
+
+main .price p {
+  color: var(--color1);
+  font-size: 20px;
+}
+
+/* Form Section */
+main .form {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../media/subscribe.jpg);
+  background-size: cover;
+  display: grid;
+  place-items: center;
+  margin: 50px 0;
+  height: 60vh;
+}
+
+main .form .content p {
+  max-width: 540px;
+}
+
+main .form form {
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto 20px;
+  border: 1px solid var(--white);
+}
+
+main .form form i {
+  color: var(--white);
+  padding: 20px 10px;
+}
+
+main .form form .email-inp {
+  display: flex;
+  align-items: center;
+  width: 70%;
+}
+
+main .form form input {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 44px;
+  padding: 0 10px;
+  border: none;
+  width: 90%;
+  color: var(--white);
+}
+
+main .form form button {
+  margin: 0;
+  border-radius: 0;
+}
+
+main .form p {
+  color: var(--white);
+  text-align: left;
+}
+
+/* Contact Us form Section */
+main .contact-us h4 {
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 500;
+  margin: 10px 0;
+}
+
+main .contact-us .content form {
+  padding: 50px 20px;
+  text-align: right;
+}
+
+main .contact-us form button {
+  padding: 20px;
+  margin-top: 10px;
+}
+
+main .contact-us form input,
+main .contact-us form textarea {
+  padding: 20px;
+  font-size: 18px;
+  width: 100%;
+  margin-bottom: 20px;
+  border: 1px solid var(--paragraph);
+}
+
+/* Footer */
+footer {
+  background-image: linear-gradient(var(--gradient), var(--gradient)),
+    url(../media/subscribe.jpg);
+  height: 50vh;
+  background-size: cover;
+  text-align: center;
+  padding: 40px 0;
+  color: var(--white);
+}
+
+footer img {
+  width: 150px;
+}
+
+footer .title {
+  text-transform: uppercase;
+  font-size: 30px;
+  width: fit-content;
+  margin: 50px auto 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--white);
+}
+
+footer .icons {
+  width: 200px;
+  margin: 0 auto 50px;
+}
+
+footer .icons i:hover {
+  cursor: pointer;
+  color: var(--color2);
+}
+
+footer span {
+  color: var(--color2);
+  font-weight: bold;
+}
+
+/* Up Button */
+button.fa-arrow-up {
+  position: fixed;
+  background-color: var(--color2);
+  color: #fff;
+  padding: 15px;
+  font-size: 22px;
+  border-radius: 5px;
+  border: none;
+  bottom: 90px;
+  right: 20px;
+  z-index: 10;
+  display: none;
+}
+
+button.fa-arrow-up:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+@media (min-width: 575px) {
+  main .cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 720px;
+    margin: auto;
+  }
+
+  main .cards .card {
+    width: 45%;
+  }
+}
+
+@media (min-width: 770px) {
+  header .list-icons ul,
+  header .angles {
+    display: flex;
+  }
+
+  header .list-icons .fa-bars {
+    display: none;
+  }
+
+  header .content-sec {
+    display: flex;
+    align-items: center;
+  }
+
+  header section .content {
+    width: 50%;
+    max-width: 800px;
+  }
+
+  main .services .container-content .content {
+    text-align: left;
+    margin: 50px 80px;
+    max-width: 720px;
+    position: relative;
+  }
+
+  main .services .content i {
+    position: absolute;
+    left: -50px;
+    top: 20px;
+  }
+
+  main .services .container-content .content h3 {
+    margin: 20px;
+  }
+
+  main .design {
+    display: flex;
+    justify-content: right;
+  }
+
+  main .design .container-content,
+  main .portfolio .images,
+  main .about .container-content .contents,
+  main .testmonials-skills .testmonials .person,
+  main .contact-us .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  main .design .container-content {
+    width: 90%;
+  }
+
+  main .design figure {
+    display: block;
+    position: relative;
+    top: 100px;
+  }
+
+  main .portfolio .images {
+    flex-wrap: wrap;
+  }
+
+  main .portfolio .images figure {
+    width: 50%;
+  }
+
+  main .about figure {
+    top: 150px;
+    margin: 50px auto 0;
+  }
+
+  main .about .container-content .contents {
+    flex-wrap: wrap;
+  }
+
+  main .about .container-content .contents .content {
+    width: 48%;
+  }
+
+  .portfolio .images figure {
+    flex-basis: 50%;
+  }
+
+  main .testmonials-skills .testmonials .person {
+    text-align: left;
+    padding: 0 20px;
+    max-width: 800px;
+    margin: 50px auto;
+  }
+
+  main .contact-us .content {
+    width: 720px;
+    margin: auto;
+  }
+
+  main .contact-us .content form {
+    order: 1;
+    width: 505px;
+  }
+
+  main .contact-us .content .info {
+    order: 2;
+    position: relative;
+    top: -110px;
+  }
+
+  main .contact-us .content .info .info-one {
+    margin-bottom: 80px;
+  }
+}
+
+@media (min-width: 920px) {
+  main .services .container-content .content {
+    margin: 50px auto;
+  }
+
+  main .design .container-content .content {
+    padding-right: 15%;
+  }
+
+  main .cards .card {
+    margin: 40px 10px;
+  }
+}
+
+@media (min-width: 990px) {
+  main .services .container-content,
+  main .testmonials-skills .container-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  main .services .container-content {
+    flex-wrap: wrap;
+  }
+
+  main .services .container-content .content {
+    width: 400px;
+    margin: 50px 0 50px 80px;
+  }
+
+  main .design .container-content .content {
+    padding-right: 30%;
+  }
+
+  main .about .container-content .contents {
+    width: 90%;
+  }
+
+  main .about .container-content .contents .content {
+    width: 25%;
+  }
+
+  main .cards {
+    max-width: 940px;
+  }
+
+  main .cards .card {
+    width: 30%;
+  }
+
+  main .form form {
+    width: 350px;
+    margin-right: 20px;
+  }
+
+  main .contact-us .content {
+    width: 940px;
+  }
+
+  main .contact-us .content form {
+    width: 660px;
+  }
+}
+
+@media (min-width: 1000px) {
+  main .services .container-content {
+    margin: 0 auto;
+    width: 900px;
+  }
+
+  main .services .container-content .content {
+    margin: 50px auto;
+    width: 450px;
+  }
+}
+
+@media (min-width: 1200px) {
+  header section .content {
+    padding-left: 100px;
+  }
+
+  main .services .container-content {
+    width: 1200px;
+  }
+
+  main .services .container-content .content {
+    width: 500px;
+  }
+
+  main .portfolio .images figure {
+    width: 25%;
+  }
+
+  .portfolio .images figure {
+    flex-basis: 25%;
+  }
+
+  main .cards {
+    max-width: 1140px;
+  }
+
+  main .testmonials-skills .container-content {
+    margin: auto;
+    padding: 0;
+    max-width: 1400px;
+  }
+
+  main .cards .card {
+    width: 23%;
+  }
+
+  main .testmonials-skills .container-content .skills {
+    position: relative;
+    top: 40px;
+  }
+
+  main .contact-us .content {
+    width: 1150px;
+  }
+
+  main .contact-us .content form {
+    width: 800px;
+  }
+}
