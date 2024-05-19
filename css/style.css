@@ -280,6 +280,7 @@ main .portfolio ul li {
   cursor: pointer;
 }
 
+main .portfolio ul li:hover,
 main .portfolio ul .active {
   background-color: var(--color2);
   color: var(--white);
@@ -886,7 +887,7 @@ button.fa-arrow-up:hover {
   }
 
   .portfolio .images figure {
-    flex-basis: 50%;
+    width: 50%;
   }
 
   main .testmonials-skills .testmonials .person {
@@ -1009,10 +1010,6 @@ button.fa-arrow-up:hover {
 
   main .portfolio .images figure {
     width: 25%;
-  }
-
-  .portfolio .images figure {
-    flex-basis: 25%;
   }
 
   main .cards {
